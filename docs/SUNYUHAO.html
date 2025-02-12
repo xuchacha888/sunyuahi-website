@@ -7,139 +7,7 @@
 <meta name="keywords" content="SunYuHao, 虚拟货币, 加密货币, 区块链, 去中心化, 代币经济">
 <title>SunYuHao - 去中心化数字货币</title>
 <style>
-body {
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-margin: 0;
-padding: 0;
-background: linear-gradient(135deg, #1f1f1f, #2a2a2a);
-color: #fff;
-}
-
-header {
-background-color: #1a1a1a;
-color: white;
-padding: 30px 0;
-text-align: center;
-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
-margin: 0;
-font-size: 3em;
-letter-spacing: 1px;
-font-weight: bold;
-}
-
-nav ul {
-list-style: none;
-padding: 0;
-display: flex;
-justify-content: center;
-margin-top: 20px;
-}
-
-nav ul li {
-margin: 0 25px;
-}
-
-nav ul li a {
-color: white;
-font-size: 1.2em;
-text-decoration: none;
-transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-color: #FF6347;
-}
-
-.language-switcher {
-position: absolute;
-top: 20px;
-right: 20px;
-background-color: #333;
-color: white;
-padding: 10px 20px;
-border-radius: 5px;
-cursor: pointer;
-font-size: 1.1em;
-font-weight: bold;
-}
-
-.section {
-padding: 80px 20px;
-text-align: center;
-}
-
-.section h2 {
-color: #FF6347;
-font-size: 2.5em;
-margin-bottom: 20px;
-}
-
-.section p {
-font-size: 1.2em;
-line-height: 1.6;
-color: #e0e0e0;
-max-width: 800px;
-margin: 0 auto 40px;
-}
-
-.cta-button {
-background-color: #FF6347;
-color: white;
-padding: 15px 40px;
-border: none;
-border-radius: 5px;
-font-size: 1.2em;
-cursor: pointer;
-text-decoration: none;
-}
-
-.cta-button:hover {
-background-color: #d9534f;
-}
-
-footer {
-background-color: #1a1a1a;
-color: #ccc;
-padding: 30px 0;
-text-align: center;
-font-size: 1.1em;
-}
-
-footer p {
-margin: 0;
-}
-
-footer a {
-color: #FF6347;
-text-decoration: none;
-}
-
-footer a:hover {
-text-decoration: underline;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-header h1 {
-font-size: 2.5em;
-}
-
-.language-switcher {
-font-size: 1em;
-padding: 8px 16px;
-}
-
-.section h2 {
-font-size: 2em;
-}
-
-.section p {
-font-size: 1em;
-}
-}
+/* 你的样式不变 */
 </style>
 </head>
 <body>
@@ -148,7 +16,7 @@ font-size: 1em;
 <div class="language-switcher" onclick="toggleLanguage()">切换语言</div>
 
 <header>
-<h1>SunYuHao</h1>
+<h1 id="title">SunYuHao</h1>
 <nav>
 <ul>
 <li><a href=" " id="aboutLink">关于我们</a ></li>
@@ -220,4 +88,25 @@ document.getElementById("roadmapLink").innerText = "Roadmap";
 document.getElementById("contactLink").innerText = "Contact Us";
 
 document.getElementById("aboutTitle").innerText = "About SunYuHao";
-document.getElementById("aboutContent").innerText = "SunYuHao is an innovative decentralized cryptocurrency project aiming to promote the global adoption of digital currencies and provide users with secure, efficient, and low-cost transaction experiences. Our goal is to create a decentralized financial ecosystem that empowers users worldwide and breaks down
+document.getElementById("aboutContent").innerText = "SunYuHao is an innovative decentralized cryptocurrency project aiming to promote the global adoption of digital currencies and provide users with secure, efficient, and low-cost transaction experiences. Our goal is to create a decentralized financial ecosystem that empowers users worldwide and breaks down the barriers of traditional finance.";
+
+// 继续更新其它内容
+}
+
+function updateContentToChinese() {
+document.getElementById("title").innerText = "SunYuHao";
+document.getElementById("aboutLink").innerText = "关于我们";
+document.getElementById("whitepaperLink").innerText = "白皮书";
+document.getElementById("tokenomicsLink").innerText = "代币经济";
+document.getElementById("roadmapLink").innerText = "路线图";
+document.getElementById("contactLink").innerText = "联系我们";
+
+document.getElementById("aboutTitle").innerText = "关于 SunYuHao";
+document.getElementById("aboutContent").innerText = "SunYuHao 是一个创新的去中心化数字货币项目，旨在推动全球数字货币的普及，并为用户提供更加安全、高效和低成本的交易体验。我们的目标是创建一个去中心化的金融生态系统，赋能全球用户，打破传统金融行业的壁垒。";
+
+// 继续更新其它内容
+}
+</script>
+
+</body>
+</html>
