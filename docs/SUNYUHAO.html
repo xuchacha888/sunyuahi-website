@@ -11,46 +11,30 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #1f1f1f, #2a2a2a);
+            background: linear-gradient(135deg, #141414, #2a2a2a);
             color: #fff;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            overflow: hidden;
         }
 
         header {
-            background-color: #1a1a1a;
-            color: white;
+            background-color: rgba(0, 0, 0, 0.7);
             padding: 30px 0;
-            text-align: center;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            margin-bottom: 50px;
         }
 
         header h1 {
-            margin: 0;
-            font-size: 3em;
+            font-size: 4rem;
             letter-spacing: 1px;
             font-weight: bold;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        nav ul li {
-            margin: 0 25px;
-        }
-
-        nav ul li a {
-            color: white;
-            font-size: 1.2em;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        nav ul li a:hover {
+            margin: 0;
             color: #FF6347;
+            text-transform: uppercase;
         }
 
         .language-switcher {
@@ -59,52 +43,59 @@
             right: 20px;
             background-color: #333;
             color: white;
-            padding: 10px 20px;
+            padding: 12px 20px;
             border-radius: 5px;
             cursor: pointer;
             font-size: 1.1em;
             font-weight: bold;
+            transition: background-color 0.3s ease;
         }
 
-        .section {
-            padding: 80px 20px;
-            text-align: center;
-        }
-
-        .section h2 {
-            color: #FF6347;
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-
-        .section p {
-            font-size: 1.2em;
-            line-height: 1.6;
-            color: #e0e0e0;
-            max-width: 800px;
-            margin: 0 auto 40px;
+        .language-switcher:hover {
+            background-color: #FF6347;
         }
 
         .cta-button {
             background-color: #FF6347;
             color: white;
-            padding: 15px 40px;
+            padding: 18px 40px;
             border: none;
             border-radius: 5px;
-            font-size: 1.2em;
+            font-size: 1.5rem;
+            font-weight: bold;
             cursor: pointer;
-            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
         .cta-button:hover {
             background-color: #d9534f;
+            transform: scale(1.05);
+        }
+
+        .section {
+            padding: 60px 20px;
+        }
+
+        .section h2 {
+            color: #FF6347;
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #e0e0e0;
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         footer {
             background-color: #1a1a1a;
             color: #ccc;
             padding: 30px 0;
-            text-align: center;
             font-size: 1.1em;
         }
 
@@ -124,20 +115,25 @@
         /* Responsive Design */
         @media (max-width: 768px) {
             header h1 {
-                font-size: 2.5em;
+                font-size: 2.5rem;
             }
 
             .language-switcher {
                 font-size: 1em;
-                padding: 8px 16px;
+                padding: 10px 16px;
+            }
+
+            .cta-button {
+                font-size: 1.2rem;
+                padding: 15px 30px;
             }
 
             .section h2 {
-                font-size: 2em;
+                font-size: 2.5rem;
             }
 
             .section p {
-                font-size: 1em;
+                font-size: 1rem;
             }
         }
     </style>
@@ -149,33 +145,22 @@
 
 <header>
     <h1>SunYuHao</h1>
-    <nav>
-        <ul>
-            <li><a href="#about" id="aboutLink">关于我们</a></li>
-            <li><a href="#whitepaper" id="whitepaperLink">白皮书</a></li>
-            <li><a href="#tokenomics" id="tokenomicsLink">代币经济</a></li>
-            <li><a href="#roadmap" id="roadmapLink">路线图</a></li>
-            <li><a href="#contact" id="contactLink">联系我们</a></li>
-        </ul>
-    </nav>
 </header>
 
 <section id="about" class="section">
     <h2 id="aboutTitle">关于 SunYuHao</h2>
-    <p id="aboutContent">SunYuHao 是一个创新的去中心化数字货币项目，旨在推动全球数字货币的普及，并为用户提供更加安全、高效和低成本的交易体验。我们的目标是创建一个去中心化的金融生态系统，赋能全球用户，打破传统金融行业的壁垒。</p>
-    <p id="aboutContent">我们深信，区块链技术和加密货币的未来将改变全球金融格局，让世界变得更加公平、透明。通过SunYuHao，我们致力于为每一位用户提供更高效、更低成本、更安全的金融服务。</p>
+    <p id="aboutContent">SunYuHao 是一个创新的去中心化数字货币项目，致力于提供安全、高效、低成本的交易体验，并推动全球数字货币的普及。我们的目标是创建一个去中心化的金融生态系统，打破传统金融行业的壁垒，赋能全球用户。</p>
 </section>
 
 <section id="whitepaper" class="section">
     <h2 id="whitepaperTitle">白皮书</h2>
-    <p id="whitepaperContent">我们的白皮书详细描述了 SunYuHao 的技术架构、代币经济模型以及发展愿景。白皮书为投资者、开发者以及项目合作伙伴提供了关于我们的深度了解。</p>
+    <p id="whitepaperContent">我们的白皮书详细描述了 SunYuHao 的技术架构、代币经济模型以及发展愿景。我们致力于推动全球加密货币和区块链技术的发展，为用户提供全新的金融体验。</p>
     <a href="path_to_whitepaper.pdf" target="_blank" id="whitepaperLinkText" class="cta-button">下载白皮书</a>
 </section>
 
 <section id="tokenomics" class="section">
     <h2 id="tokenomicsTitle">代币经济</h2>
     <p id="tokenomicsContent">SunYuHao 代币（SYH）的总供应量为 2 亿枚，其中 5000 万枚将在首次发行时流通。剩余的代币将在接下来的几年内逐步解锁，确保生态系统的长期稳定发展。</p>
-    <p id="tokenomicsContent">SYH 代币的使用场景广泛，包括但不限于作为交易支付手段、参与治理、网络安全验证等。我们的代币经济模型旨在激励社区成员参与并推动项目的发展。</p>
 </section>
 
 <section id="roadmap" class="section">
@@ -184,14 +169,6 @@
     <p id="roadmapContent">Q2 2025：发布主网，完成首次代币发行（ICO）。</p>
     <p id="roadmapContent">Q3 2025：推出去中心化金融平台，支持更多的区块链应用。</p>
     <p id="roadmapContent">Q4 2025：拓展全球市场，接入更多支付平台，推动全球数字货币的普及。</p>
-    <p id="roadmapContent">2026 年：进一步升级协议，优化性能，并实现更多功能，提升用户体验。</p>
-</section>
-
-<section id="contact" class="section">
-    <h2 id="contactTitle">联系我们</h2>
-    <p id="contactContent">如有任何疑问，或者希望加入我们，共同推动数字货币的发展，欢迎通过以下方式联系我们：</p>
-    <p>Email: <a href="mailto:sometimes198@outlook.com" id="contactEmail">sometimes198@outlook.com</a></p>
-    <p>Telegram: <a href="https://xuchacha888.github.io/sunyuahi-website/" id="contactTelegram">no telegram</a></p>
 </section>
 
 <footer>
@@ -212,12 +189,29 @@
     }
 
     function updateContentToEnglish() {
-        document.getElementById("title").innerText = "SunYuHao";
-        document.getElementById("aboutLink").innerText = "About Us";
-        document.getElementById("whitepaperLink").innerText = "Whitepaper";
-        document.getElementById("tokenomicsLink").innerText = "Tokenomics";
-        document.getElementById("roadmapLink").innerText = "Roadmap";
-        document.getElementById("contactLink").innerText = "Contact Us";
-
         document.getElementById("aboutTitle").innerText = "About SunYuHao";
-        document.getElementById("aboutContent").innerText = "SunYuHao is an innovative decentralized cryptocurrency project aiming to promote the global adoption of digital currencies and provide users with secure, efficient, and low-cost transaction experiences. Our goal is to create a decentralized financial ecosystem that empowers users worldwide and breaks down
+        document.getElementById("aboutContent").innerText = "SunYuHao is an innovative decentralized cryptocurrency project aiming to provide secure, efficient, and low-cost transaction experiences, and to promote the global adoption of digital currencies. Our goal is to create a decentralized financial ecosystem that empowers users worldwide and breaks down the barriers of traditional finance.";
+        document.getElementById("whitepaperTitle").innerText = "Whitepaper";
+        document.getElementById("whitepaperContent").innerText = "Our whitepaper details the technical architecture, tokenomics, and vision for SunYuHao. We are committed to advancing the development of global cryptocurrency and blockchain technologies, offering users a new financial experience.";
+        document.getElementById("tokenomicsTitle").innerText = "Tokenomics";
+        document.getElementById("tokenomicsContent").innerText = "The total supply of SunYuHao tokens (SYH) is 200 million, with 50 million in circulation at the initial issuance. The remaining tokens will be gradually unlocked over the next few years to ensure long-term stability of the ecosystem.";
+        document.getElementById("roadmapTitle").innerText = "Roadmap";
+        document.getElementById("roadmapContent").innerText = "Q1 2025: Project launch, team formation, and technical development.";
+        // 继续更新其他内容
+    }
+
+    function updateContentToChinese() {
+        document.getElementById("aboutTitle").innerText = "关于 SunYuHao";
+        document.getElementById("aboutContent").innerText = "SunYuHao 是一个创新的去中心化数字货币项目，致力于提供安全、高效、低成本的交易体验，并推动全球数字货币的普及。我们的目标是创建一个去中心化的金融生态系统，打破传统金融行业的壁垒，赋能全球用户。";
+        document.getElementById("whitepaperTitle").innerText = "白皮书";
+        document.getElementById("whitepaperContent").innerText = "我们的白皮书详细描述了 SunYuHao 的技术架构、代币经济模型以及发展愿景。我们致力于推动全球加密货币和区块链技术的发展，为用户提供全新的金融体验。";
+        document.getElementById("tokenomicsTitle").innerText = "代币经济";
+        document.getElementById("tokenomicsContent").innerText = "SunYuHao 代币（SYH）的总供应量为 2 亿枚，其中 5000 万枚将在首次发行时流通。剩余的代币将在接下来的几年内逐步解锁，确保生态系统的长期稳定发展。";
+        document.getElementById("roadmapTitle").innerText = "路线图";
+        document.getElementById("roadmapContent").innerText = "Q1 2025：项目启动，团队组建与技术开发。";
+        // 继续更新其他内容
+    }
+</script>
+
+</body>
+</html>
